@@ -103,21 +103,15 @@ button {
   line-height: 1.2;
 }
 
-.main-nav__accent {
-  color: var(--primary-text-color);
+.main-nav__studio {
+  color: #000;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
 }
 
-.studio {
-  color: var(--text-color);
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-}
+
 
 /*Header*/
 .page-header {
@@ -344,16 +338,11 @@ button {
 }
 
 /*What do we do*/
-.main-box {
+.box {
   padding-top: 0;
 }
 
-.box {
-  display: flex;
-  justify-content: space-between;
-}
-
-.section__title {
+.box__title {
   margin-bottom: 50px;
   color: var(--primary-text-color);
   font-weight: 700;
@@ -361,16 +350,23 @@ button {
   line-height: 1.16;
   text-align: center;
 }
-.box-thumb {
+
+.box__card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box__thumb {
   position: relative;
 }
-.box-thumb__image {
+
+.box__image {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-.box-thumb__text {
+.box__text {
   display: flex;
   position: absolute;
   justify-content: center;
@@ -391,35 +387,35 @@ button {
   background-color: var(--background-color);
 }
 .team__title {
-    margin-top: 0;
-    margin-bottom: 50px;
-    color: var(--primary-text-color);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
 }
 .teamtext-overlay {
   background-color: var(--background-color);
 }
 
-.team-card {
+.team__card {
   display: flex;
   justify-content: space-between;
 }
 
-.team-card__item {
+.team__item {
   background-color: var(--primary-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.teamcard-social {
-    padding-top: 30px;
-    padding-bottom: 30px;
+.team__social {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
-.teamcard-social__title {
+.team__pretitle {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -427,7 +423,7 @@ button {
   text-align: center;
 }
 
-.teamcard-social__post {
+.team__post {
   margin-top: 10px;
   margin-bottom: 16px;
   color: var(--secondary-text-color);
@@ -437,13 +433,13 @@ button {
   text-align: center;
 }
 
-.team-social {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+.team__box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
-.team-social__link {
+.team__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -455,20 +451,20 @@ button {
   transition: background-color 250ms var(--timing-function);
 }
 
-.team-social__svg {
+.team__icon {
   height: 20px;
   width: 20px;
   fill: #afb1b8;
   transition: fill 250ms var(--timing-function);
 }
 
-.team-social__link:hover,
-.team-social__link:focus {
+.team__link:hover,
+.team__link:focus {
   background-color: var(--accent-color);
 }
 
-.team-social__link:hover svg,
-.team-social__link:focus svg {
+.team__link:hover svg,
+.team__link:focus svg {
   fill: var(--primary-background-color);
 }
 
@@ -580,12 +576,12 @@ button {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.groupe-thumb {
+.project__thumb {
   position: relative;
   overflow: hidden;
 }
 
-.groupe-thumb__text {
+.project__text {
   position: absolute;
   display: block;
   top: 0;
@@ -601,18 +597,18 @@ button {
   transition: transform 250ms var(--timing-function);
 }
 
-.project__item:hover .groupe-thumb__text {
+.project__item:hover .project__text {
   transform: translateY(0);
 }
 
-.element {
+.project__box {
   padding: 20px 24px;
   border-left: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
 }
 
-.element__title {
+.project__pretitle {
   margin-bottom: 4px;
   color: var(--primary-text-color);
   font-weight: 700;
@@ -621,7 +617,7 @@ button {
   letter-spacing: 0.06em;
 }
 
-.element__post {
+.project__post {
   margin-top: 0;
   margin-bottom: 0;
   color: var(--secondary-text-color);
@@ -635,7 +631,7 @@ button {
   padding-bottom: 94px;
 }
 
-.client-title {
+.client__title {
   margin-top: 0;
   margin-bottom: 50px;
   font-weight: 700;
@@ -646,12 +642,12 @@ button {
   color: var(--primary-text-color);
 }
 
-.client-card {
+.client__card {
   display: flex;
   justify-content: space-between;
 }
 
-.client-card .logo {
+.client__logo {
   display: flex;
   width: 170px;
   height: 92px;
@@ -662,21 +658,21 @@ button {
   transition: border-color 250ms var(--timing-function);
 }
 
-.client-card .logo:hover,
-.client-card .logo:focus {
-  border-color: var(--accent-color);
-}
-
-.client-card .logo-svg {
+.client__svg {
   width: 106px;
   height: 60px;
   fill: #afb1b8;
   transition: fill 250ms var(--timing-function);
 }
 
-.client-card .logo:hover svg,
-.client-card .logo:focus svg {
-  fill: #2196f3;
+.client__logo:hover,
+.client__logo:focus {
+  border-color: var(--accent-color);
+}
+
+.client__logo:hover svg,
+.client__logo:focus svg {
+  fill: var(--accent-color);
 }
 
 /*Footer*/
@@ -686,7 +682,32 @@ button {
   background-color: var(--secondary-background-color);
 }
 
-.contact {
+
+.contact__logotype {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  
+}
+
+.contact__studio {
+  color: var(--text-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.contact__adres {
+  color: var(--text-color);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+}
+
+.contact__card {
   margin-top: 20px;
 }
 
@@ -698,13 +719,6 @@ button {
   margin-bottom: 0px;
 }
 
-.contact__adres {
-  color: var(--text-color);
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.71;
-}
-
 .contact__link {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
@@ -713,11 +727,11 @@ button {
 }
 
 /*Social link*/
-.footer-social {
+.social {
   margin-left: 70px;
 }
 
-.footer-social__title {
+.social__title {
   color: var(--primary-background-color);
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -726,7 +740,7 @@ button {
   letter-spacing: 0.03em;
 }
 
-.social {
+.social__card {
   display: flex;
   height: 44px;
   width: 206px;
@@ -744,7 +758,7 @@ button {
   transition: background-color 250ms var(--timing-function);
 }
 
-.social__svg {
+.social__icon {
   height: 20px;
   width: 20px;
   fill: var(--primary-background-color);
@@ -756,8 +770,8 @@ button {
   background-color: var(--accent-color);
 }
 
-.social-svg:hover svg,
-.social-svg:focus svg {
+.social__icon:hover svg,
+.social__icon:focus svg {
   fill: var(--primary-background-color);
 }
 
@@ -888,7 +902,7 @@ button {
   }
 }
 
-.close-button {
+.modal__button {
   position: absolute;
   width: 30px;
   height: 30px;
@@ -900,7 +914,7 @@ button {
   transition: fill 250ms var(--timing-function);
 }
 
-.close-svg {
+.modal__icon {
   position: absolute;
   width: 18px;
   height: 18px;
@@ -910,7 +924,7 @@ button {
   transform: translate(-50%, -50%);
 }
 
-.close-button:hover svg {
+.modal__button:hover svg {
   fill: var(--accent-color);
 }
 
@@ -921,7 +935,7 @@ button {
   padding: 40px;
 }
 
-.form-title {
+.form__title {
   text-align: center;
   margin-bottom: 12px;
   font-size: 20px;
@@ -929,18 +943,27 @@ button {
   line-height: 1.17;
 }
 
-.form-field {
+.form__field {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
 
+.form__label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--secondary-text-color);
+}
+
 /*div-обгортка*/
-.input-overlay {
+
+.form__overlay {
   position: relative;
 }
 
-.form-input {
+.form__input {
   width: 100%;
   padding: 11px 42px;
   outline: none;
@@ -949,19 +972,7 @@ button {
   transition: border 250ms var(--timing-function);
 }
 
-.form-label {
-  margin-bottom: 4px;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: var(--secondary-text-color);
-}
-
-.form-field.margin {
-  margin-bottom: 20px;
-}
-
-.form-svg {
+.form__icon {
   position: absolute;
   height: 18px;
   width: 18px;
@@ -971,15 +982,19 @@ button {
   transition: fill 250ms var(--timing-function);
 }
 
-.form-input:focus {
+.form__field--margin {
+  margin-bottom: 20px;
+}
+
+.form__input:focus {
   border: 1px solid var(--accent-color);
 }
 
-.form-input:focus + .form-svg {
+.form__input:focus + .form__icon {
   fill: var(--accent-color);
 }
 
-.form-field textarea {
+.form__field textarea {
   width: 100%;
   height: 120px;
   padding: 12px 16px;
@@ -988,28 +1003,28 @@ button {
   border-radius: 4px;
 }
 
-.form-field textarea::placeholder {
+.form__field textarea::placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   color: rgba(117, 117, 117, 0.5);
 }
 
-/*Посилання *Приймаю умови*/
-.form-link {
+/*checkbox custom*/
+.form__link {
   color: var(--accent-color);
   text-decoration-line: underline;
   margin-left: 5px;
 }
 
-.form-checkbox {
+.form__checkbox {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
 }
 
-.form-checkbox label {
+.form__checkbox label {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1017,7 +1032,7 @@ button {
   color: var(--secondary-text-color);
 }
 
-.checkbox {
+.form__gal {
   display: flex;
   width: 16px;
   height: 15px;
@@ -1028,25 +1043,25 @@ button {
   border-radius: 3px;
 }
 
-.checkbox-svg {
+.form__ico {
   transition: fill 250ms var(--timing-function);
 }
 
-.hidden {
+.form__hidden {
   position: absolute;
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
 }
 
-.form-checkbox input:checked + label .checkbox {
+.form__checkbox input:checked + label .form__gal {
   background: var(--accent-color);
   border: none;
   justify-content: center;
 }
 
 /*Кнопка Відправити*/
-.form-btn {
+.form__btn {
   display: flex;
   width: 200px;
   height: 50px;
