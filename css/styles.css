@@ -110,7 +110,9 @@ button {
   font-size: 26px;
   line-height: 1.2;
 }
-
+.studio--white {
+  color: var(--primary-background-color);
+}
 
 
 /*Header*/
@@ -687,9 +689,6 @@ button {
   font-style: normal;
   font-weight: 400;
   line-height: 1.71;
-}
-.studio--white {
-  color: var(--primary-background-color);
 }
 
 .contact__card {
